@@ -47,12 +47,25 @@ const search = async (food) => {
 
   }
   catch (error) {
-    msg = error.message
+    console.log(error)
+    // msg = error.message
+    msg = [
+      {
+        "type": "sticker",
+        "packageId": "11539",
+        "stickerId": "52114145"
+      },
+      {
+        'type':'text',
+        'text':'歹勢TT，沒有符合的食譜，請重新搜尋!'
+      }
+      ]
   }
 
   return msg
 }
 
+// ------------ 抓材料、步驟數量 --------------------------------------------------------------------------------------------
 const getCount = async (data) => {
   let counts = []
   try {
@@ -143,8 +156,8 @@ bot.on('message', async (event) => {
   let msgs
 
   if (event.message.text.includes('找')) {
-    msgs = await search(event.message.text.slice(2))
-
+      msgs = await search(event.message.text.slice(2))
+      
   }
 
   /*
@@ -694,7 +707,7 @@ bot.on('postback', async (event) => {
           {
             "type": "text",
             "text": '步驟' + (parseInt(r) + 1),
-            "size": "xl",
+            "size": "lg",
             "weight": "bold",
             "align": "center"
           },
@@ -702,8 +715,8 @@ bot.on('postback', async (event) => {
             "type": "text",
             "text": showRecipe.step[r],
             "wrap": true,
-            "offsetTop": "15%",
-            "size": "lg"
+            "offsetTop":"5%",
+            "size": "md"
           }
 
         ]
