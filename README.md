@@ -23,12 +23,12 @@ ex.
 
 - 搜尋結果
     1. 可直接查看食譜，或是到網頁查看 
-      ![image](https://github.com/wan1996tina/nodejs_linebot/blob/master/img/p1.png)
+    ![image](https://github.com/wan1996tina/nodejs_linebot/blob/master/img/p1.png)
       
     2. 點選看食譜，即跳出完成示意圖、食材及作法
-     ![image](https://github.com/wan1996tina/nodejs_linebot/blob/master/img/p2.png)
-     ![image](https://github.com/wan1996tina/nodejs_linebot/blob/master/img/p3.png)
-     ![image](https://github.com/wan1996tina/nodejs_linebot/blob/master/img/p4.png)
+     ![image](https://github.com/wan1996tina/nodejs_linebot/blob/master/img/p2.jpg)
+     ![image](https://github.com/wan1996tina/nodejs_linebot/blob/master/img/p3.jpg)
+     ![image](https://github.com/wan1996tina/nodejs_linebot/blob/master/img/p4.jpg)
 
 
 
