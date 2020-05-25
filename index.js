@@ -729,5 +729,5 @@ bot.on('postback', async (event) => {
   event.reply(recipeCarousel)
 })
 
-bot.listen('/', process.env.Port)
+bot.listen('/', process.env.PORT)
 
